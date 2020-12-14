@@ -12,7 +12,7 @@ jobs:
       image: "michaelbrockus/ubuntu-host:latest"
 
     steps:
-    - uses: actions/checkout@v2.3.2
+    - uses: actions/checkout@v2.3.4
     - run: |
         meson setup build -Dwith_tests=enabled &&
         meson test -C build -v
@@ -23,7 +23,7 @@ jobs:
     container:
       image: "michaelbrockus/debian-host:latest"
     steps:
-    - uses: actions/checkout@v2.3.2
+    - uses: actions/checkout@v2.3.4
     - run: |
         meson setup build -Dwith_tests=enabled &&
         meson test -C build -v
@@ -34,7 +34,7 @@ jobs:
     container:
       image: "michaelbrockus/fedora-host:latest"
     steps:
-    - uses: actions/checkout@v2.3.2
+    - uses: actions/checkout@v2.3.4
     - run: |
         meson setup build -Dwith_tests=enabled &&
         meson test -C build -v
@@ -45,7 +45,7 @@ jobs:
     container:
       image: "michaelbrockus/archlinux-host:latest"
     steps:
-    - uses: actions/checkout@v2.3.2
+    - uses: actions/checkout@v2.3.4
     - run: |
         meson setup build -Dwith_tests=enabled &&
         meson test -C build -v
@@ -56,7 +56,7 @@ jobs:
     container:
       image: "michaelbrockus/opensuse-host:latest"
     steps:
-    - uses: actions/checkout@v2.3.2
+    - uses: actions/checkout@v2.3.4
     - run: |
         meson setup build -Dwith_tests=enabled &&
         meson test -C build -v
