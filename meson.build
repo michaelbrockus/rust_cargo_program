@@ -4,6 +4,7 @@ project('Program', 'rust',
     default_options: ['werror=true', 'rust_std=2018'])
 
 cargo = find_program('cargo', required: true)
+cargo_script = find_program('.github/scripts/cargo.sh')
 
 subdir('code')
 subdir('test')
