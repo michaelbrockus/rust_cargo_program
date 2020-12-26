@@ -1,7 +1,4 @@
-cargo_toml = files(
-    '..' / 'Cargo.toml',
-    '..' / 'Cargo.lock'
-)
+cargo_toml = files('..' / 'Cargo.toml')
 
 code_lib = static_library('code_lib', files('program.rs'),
     include_directories: '.',
