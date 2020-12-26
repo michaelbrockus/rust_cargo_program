@@ -5,6 +5,7 @@ project('Program', 'rust',
 
 cargo = find_program('cargo', required: true)
 cargo_wrapper = find_program('.github' / 'cargo_wrapper.sh')
+cargo_tester = find_program('.github' / 'cargo_tester.sh')
 
 subdir('code')
 subdir('test')
