@@ -1,0 +1,6 @@
+[package]
+authors = ["Michael Brockus <michaelbrockus@gmail.com>"]
+name = "prog"
+edition = "2018"
+
+[dependencies]
