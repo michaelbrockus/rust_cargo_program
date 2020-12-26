@@ -4,6 +4,7 @@ project('Program', 'rust',
     default_options: ['werror=true', 'rust_std=2018'])
 
 cargo = find_program('cargo', required: true)
+cargo_wrapper = find_program('.github' / 'cargo_wrapper.py')
 
 subdir('code')
 subdir('test')
