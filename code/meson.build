@@ -1,3 +1,8 @@
+cargo_toml = files(
+    '..' / 'Cargo.toml',
+    '..' / 'Cargo.lock'
+)
+
 code_lib = static_library('code_lib', files('program.rs'),
     include_directories: '.',
     install: true)
