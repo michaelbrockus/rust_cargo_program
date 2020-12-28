@@ -1,6 +1,20 @@
 [package]
-authors = ["Michael Brockus <michaelbrockus@gmail.com>"]
 name = "prog"
+version = "0.1.0"
+authors = ["Michael <michaelbrockus@gmail.com>"]
 edition = "2018"
+readme = "readme.md"
+license = "Apache-2.0"
+repository = "https://github.com/michaelbrockus/rust_cargo_program"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "prog"
+path = "src/main.rs"
+
+[lib]
+name = "program"
+path = "src/lib.rs"
 
 [dependencies]

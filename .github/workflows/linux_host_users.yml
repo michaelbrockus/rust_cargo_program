@@ -13,9 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2.3.4
-    - run: |
-        meson setup build -Dwith_tests=enabled &&
-        meson test -C build -v
+    - run: cargo run
       working-directory: .
 
   ci_build_distro_debian:
@@ -24,9 +22,7 @@ jobs:
       image: "michaelbrockus/debian-host:latest"
     steps:
     - uses: actions/checkout@v2.3.4
-    - run: |
-        meson setup build -Dwith_tests=enabled &&
-        meson test -C build -v
+    - run: cargo run
       working-directory: .
 
   ci_build_distro_fedora:
@@ -35,9 +31,7 @@ jobs:
       image: "michaelbrockus/fedora-host:latest"
     steps:
     - uses: actions/checkout@v2.3.4
-    - run: |
-        meson setup build -Dwith_tests=enabled &&
-        meson test -C build -v
+    - run: cargo run
       working-directory: .
 
   ci_build_distro_archlinux:
@@ -46,9 +40,7 @@ jobs:
       image: "michaelbrockus/archlinux-host:latest"
     steps:
     - uses: actions/checkout@v2.3.4
-    - run: |
-        meson setup build -Dwith_tests=enabled &&
-        meson test -C build -v
+    - run: cargo run
       working-directory: .
 
   ci_build_distro_opensuse:
@@ -57,7 +49,5 @@ jobs:
       image: "michaelbrockus/opensuse-host:latest"
     steps:
     - uses: actions/checkout@v2.3.4
-    - run: |
-        meson setup build -Dwith_tests=enabled &&
-        meson test -C build -v
+    - run: cargo run
       working-directory: .

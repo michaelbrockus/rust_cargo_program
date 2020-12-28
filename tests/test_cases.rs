@@ -9,8 +9,7 @@
 // project since its important to test once implementation against a set
 // of common test cases
 //
-extern crate code_lib;
-
+extern crate program;
 
 //
 // list of all the test cases for this project
@@ -25,7 +24,7 @@ mod tests {
 
     #[test]
     fn test_greet() {
-        assert_eq!("Hello, Rust Developer.", code_lib::greet());
+        assert_eq!("Hello, Rust Developer.", program::greet());
     } // end of test case
 
 } // end of test fixture

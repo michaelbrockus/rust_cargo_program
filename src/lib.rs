@@ -3,7 +3,6 @@
 // author: Michael Brockus
 // gmail: <michaelbrockus@gmail.com>
 //
-#![crate_name = "code_lib"]
 
 //
 // Greet the user
