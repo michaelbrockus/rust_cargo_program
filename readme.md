@@ -11,30 +11,28 @@ Please add relevant information about your application.
 * * *
 
 Targeted audience we are building for is MacOSX and Linux users. This project uses
-[Meson](https://mesonbuild.com/) `0.56.0` and newer.
+[Cargo](https://doc.rust-lang.org/stable/cargo/) `1.48.0` and newer.
 
-## Setup, Compile and Install
+## Compile, Test and Install
 
 * * *
 
-Firstly the users should set up a project build directory before
-compiling:
+Firstly the users should compile a project before installing like so:
 
 ```console
-meson setup builddir
+cargo build
 ```
 
-The next step should be to compile the target of a configured
-Meson project:
+The next step should be to test the target to make sure it works:
 
 ```console
-meson compile -C builddir
+cargo test
 ```
 
 Then we install the application like so:
 
 ```console
-meson install -C builddir
+cargo install
 ```
 
 And finally we run this cool application:
@@ -47,8 +45,8 @@ prog
 
 * * *
 
-You can contact me with either of these methods.
+You may find that I have a number of ways that you can contact
+me. All of these methods happen to be listed on my blogging platform
+[Mike's virtual office](https://michaelbrockus.home.blog/contact/).
 
--   linkedin: [michael-brockus](https://www.linkedin.com/in/michael-brockus-1009a1174/)
--   reddit: [MichaelBrockus](https://www.reddit.com/user/MichaelBrockus)
--   gmail: [michaelbrockus@gmail.com](mailto:michaelbrockus@gmail.com).
+Lastly don't forget to have a cup of virtual coffee. Thanks.
