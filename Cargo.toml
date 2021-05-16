@@ -9,9 +9,7 @@ repository = "https://github.com/dragon-apps/rust_cargo_program"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[[bin]]
-name = "prog"
-path = "src/main.rs"
-
 [dependencies]
-serenity = "0.5"
+dotenv = "0.15.0"
+serenity = "0.10.4"
+tokio = {version = "1.4.0", features = ["full"]}
