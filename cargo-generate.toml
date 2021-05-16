@@ -1,0 +1,14 @@
+[placeholders.token_variable_name]
+type = "string"
+prompt = "What do you want to name the environment variable that the bot reads from to get its bot token?"
+default = "BOT_TOKEN"
+
+[placeholders.bot_prefix]
+type = "string"
+prompt = "What prefix should activate the bot? (e.x. '!', '`')"
+default = "!"
+
+[placeholders.include_examples]
+type = "bool"
+prompt = "Do you want to include example code? (This is recommended for beginners)"
+default = true
