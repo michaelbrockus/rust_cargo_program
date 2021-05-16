@@ -13,9 +13,5 @@ repository = "https://github.com/dragon-apps/rust_cargo_program"
 name = "prog"
 path = "src/main.rs"
 
-[lib]
-name = "program"
-path = "src/lib.rs"
-
 [dependencies]
 serenity = "0.10"
