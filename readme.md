@@ -11,7 +11,8 @@ Please add relevant information about your application.
 * * *
 
 Targeted audience we are building for is Discord servers. This project
-uses Rust `2018` standard.
+uses Rust `2018` standard. The Serenity create is used in the development
+of the bot, Serenity is a Rust library for the Discord API.
 
 
 ## Invite the bot
