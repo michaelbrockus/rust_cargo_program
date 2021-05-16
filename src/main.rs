@@ -46,8 +46,7 @@ async fn main() {
     // start listening for events by starting a single shard
     if let Err(why) = client.start().await {
         println!("An error occurred while running the client: {:?}", why);
-    } // end if
-
+    }
 } // end of function main
 
 //
