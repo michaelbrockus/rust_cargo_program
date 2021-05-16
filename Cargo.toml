@@ -15,3 +15,4 @@ path = "src/main.rs"
 
 [dependencies]
 serenity = "0.10"
+tokio = "0.2"
