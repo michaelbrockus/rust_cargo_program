@@ -29,7 +29,7 @@ impl EventHandler for Handler {}
 //
 // Greet the user
 //
-pub fn greet() -> &'static str
+pub async fn greet() -> &'static str
 {
     "Hello, Rust Developer."
 } // end of functions greet
