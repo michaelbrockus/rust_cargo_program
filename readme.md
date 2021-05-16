@@ -1,4 +1,4 @@
-# Rust Program
+# Rust Discord Bot
 
 ## About
 
@@ -10,36 +10,16 @@ Please add relevant information about your application.
 
 * * *
 
-Targeted audience we are building for is Windows 10, MacOSX and Linux users. This project uses
-[Cargo](https://doc.rust-lang.org/stable/cargo/) `1.48.0` and newer.
+Targeted audience we are building for is Discord servers. This project
+uses Rust `2018` standard.
 
-## Compile, Test and Install
+
+## Invite the bot
 
 * * *
 
-Firstly the users should compile a project before installing like so:
+Add invite link with info
 
-```console
-cargo build
-```
-
-The next step should be to test the target to make sure it works:
-
-```console
-cargo test
-```
-
-Then we install the application like so:
-
-```console
-cargo install
-```
-
-And finally we run this cool application:
-
-```console
-prog
-```
 
 ## Contact the developer
 
