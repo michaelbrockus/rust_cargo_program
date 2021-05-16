@@ -18,3 +18,4 @@ name = "program"
 path = "src/lib.rs"
 
 [dependencies]
+discord = "0.8.1"
