@@ -5,7 +5,7 @@ authors = ["Michael <michaelbrockus@gmail.com>"]
 edition = "2018"
 readme = "readme.md"
 license = "Apache-2.0"
-repository = "https://github.com/michaelbrockus/rust_cargo_program"
+repository = "https://github.com/dragon-apps/rust_cargo_program"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -18,4 +18,4 @@ name = "program"
 path = "src/lib.rs"
 
 [dependencies]
-discord = "0.8.1"
+discord = { git = "https://github.com/SpaceManiac/discord-rs" }
