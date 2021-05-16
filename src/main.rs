@@ -3,14 +3,24 @@
 // author: Michael Brockus
 // gmail: <michaelbrockus@gmail.com>
 //
-extern crate program;
-use program::foundation;
+use serenity::async_trait;
+use serenity::client::{Client, Context, EventHandler};
+use serenity::model::channel::Message;
+use serenity::framework::standard::{
+    StandardFramework,
+    CommandResult,
+    macros::{
+        command,
+        group
+    }
+};
 
 use std::env;
 
 #[group]
 #[commands(ping)]
 struct General;
+
 struct Handler;
 
 #[async_trait]
