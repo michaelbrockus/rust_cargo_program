@@ -14,5 +14,4 @@ name = "prog"
 path = "src/main.rs"
 
 [dependencies]
-serenity = "0.10"
-tokio = "0.2"
+serenity = "0.5"
