@@ -7,7 +7,8 @@ extern crate program;
 use program::foundation;
 
 // main is where program execution starts
-fn main()
+#[tokio::main]
+async fn main()
 {
     foundation();
 } // end of function main
