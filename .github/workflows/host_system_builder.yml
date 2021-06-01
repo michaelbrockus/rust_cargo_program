@@ -6,6 +6,15 @@ on:
 
 
 jobs:
+  macos:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2.3.4
+    - uses: actions/setup-python@v2.2.2
+      with:
+        python-version: '3.9.x'
+    - run: cargo build
+    - run: cargo test
 
   ci_build_distro_ubuntu:
     runs-on: ubuntu-latest
@@ -13,7 +22,7 @@ jobs:
       image: "michaelbrockus/ubuntu-host:latest"
     steps:
     - uses: actions/checkout@v2.3.4
-    - run: export DISCORD_TOKEN=your_discord_token_here && cargo run
+    - run: cargo build && cargo test
       working-directory: .
 
   ci_build_distro_debian:
@@ -22,7 +31,7 @@ jobs:
       image: "michaelbrockus/debian-host:latest"
     steps:
     - uses: actions/checkout@v2.3.4
-    - run: export DISCORD_TOKEN=your_discord_token_here && cargo run
+    - run: cargo build && cargo test
       working-directory: .
 
   ci_build_distro_fedora:
@@ -31,7 +40,7 @@ jobs:
       image: "michaelbrockus/fedora-host:latest"
     steps:
     - uses: actions/checkout@v2.3.4
-    - run: export DISCORD_TOKEN=your_discord_token_here && cargo run
+    - run: cargo build && cargo test
       working-directory: .
 
   ci_build_distro_archlinux:
@@ -40,7 +49,7 @@ jobs:
       image: "michaelbrockus/archlinux-host:latest"
     steps:
     - uses: actions/checkout@v2.3.4
-    - run: export DISCORD_TOKEN=your_discord_token_here && cargo run
+    - run: cargo build && cargo test
       working-directory: .
 
   ci_build_distro_opensuse:
@@ -49,5 +58,5 @@ jobs:
       image: "michaelbrockus/opensuse-host:latest"
     steps:
     - uses: actions/checkout@v2.3.4
-    - run: export DISCORD_TOKEN=your_discord_token_here && cargo run
+    - run: cargo build && cargo test
       working-directory: .
