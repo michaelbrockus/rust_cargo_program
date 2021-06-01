@@ -10,9 +10,13 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2.3.4
-    - uses: actions/setup-python@v2.2.2
-      with:
-        python-version: '3.9.x'
+    - run: cargo build
+    - run: cargo test
+
+  windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2.3.4
     - run: cargo build
     - run: cargo test
 
