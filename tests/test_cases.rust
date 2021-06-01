@@ -26,6 +26,6 @@ mod tests {
 
     #[test]
     fn diag_1_x_wins() {
-        assert_eq!(program::greet(), "");
+        assert_eq!(program::greet(), "Greetings Rust programmer, let's get started!");
     }
 }
