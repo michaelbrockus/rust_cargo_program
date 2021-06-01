@@ -1,0 +1,31 @@
+//
+// file: test_cases.rs
+// author: Michael Brockus
+// gmail: <michaelbrockus@gmail.com>
+//
+// USE CASE:
+//
+// The use case of this file is to contain the test cases needed by this
+// project since its important to test once implementation against a set
+// of common test cases
+//
+extern crate program;
+
+// These are tests! Rust has testing built-in so you get a streamlined experience that encourages
+// you to write tests more often.
+// To run these tests, run `cargo test`
+// More information: https://doc.rust-lang.org/book/second-edition/ch11-00-testing.html
+
+// #[cfg(test)] tells the compiler to only include the rest of this code if we are running
+// `cargo test`. This speeds up compile times since Rust doesn't need to process a bunch of code
+// which won't be run otherwise.
+#[cfg(test)]
+mod tests {
+    //TODO: Writing more tests. These are not even close to
+    // exhaustive, but they are a good start!
+
+    #[test]
+    fn diag_1_x_wins() {
+        assert_eq!(program::greet(), "");
+    }
+}
