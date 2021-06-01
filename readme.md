@@ -1,4 +1,4 @@
-# Rust Discord Bot
+# Rust Program
 
 ## About
 
@@ -6,21 +6,46 @@
 
 Please add relevant information about your application.
 
+## Program Preview
+
+* * *
+
+Please add an image for the user to see.
+
 ## Tooling information
 
 * * *
 
-Targeted audience we are building for is Discord servers. This project
-uses Rust `2018` standard. The Serenity create is used in the development
-of the bot, Serenity is a Rust library for the Discord API.
+Targeted audience we are building for is Windows 10, MacOSX and Linux users. This project uses
+[Cargo](https://doc.rust-lang.org/stable/cargo/) `1.48.0` and newer.
 
-
-## Invite the bot
+## Compile, Test and Install
 
 * * *
 
-Add invite link with info
+Firstly the users should compile a project before installing like so:
 
+```console
+cargo build
+```
+
+The next step should be to test the target to make sure it works:
+
+```console
+cargo test
+```
+
+Then we install the application like so:
+
+```console
+cargo install
+```
+
+And finally we run this cool application:
+
+```console
+prog
+```
 
 ## Contact the developer
 
