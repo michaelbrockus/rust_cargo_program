@@ -20,6 +20,14 @@ jobs:
     - run: cargo build
     - run: cargo test
 
+  chrome_book:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: nanasess/setup-chromedriver@v1.0.5
+    - run: chromedriver --url-base=/wd/hub &
+    - run: cargo build && cargo test
+
   ci_build_distro_ubuntu:
     runs-on: ubuntu-latest
     container:
