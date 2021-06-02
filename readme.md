@@ -16,8 +16,8 @@ Please add an image for the user to see.
 
 * * *
 
-Targeted audience we are building for is Windows 10, MacOSX and Linux users. This project uses
-[Cargo](https://doc.rust-lang.org/stable/cargo/) `1.48.0` and newer.
+Targeted audience we are building for is **Windows 10**, **MacOSX**, **ChromeOS**,
+and **Linux** users. This project uses [Cargo](https://doc.rust-lang.org/stable/cargo/) `1.50.0` and newer.
 
 ## Compile, Test and Install
 
